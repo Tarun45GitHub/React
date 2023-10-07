@@ -13,3 +13,7 @@ S. React is a Library.
 Q. Framework Vs Library
 => Framework fllows rules strictly .(Jango,Next.js)
 => Library fllows rules but not strictly it gives freedom.(react)
+
+S. React have two Library
+=>rreact(core Library)+ react-dom(web)
+=>react(core Library)+ react-native(mobile apps)
