@@ -8,14 +8,14 @@ function App() {
 
   // let counter=5;
   const addvalue=()=>{
-    counter=counter+1;
-    console.log("clicked",counter);
-    setCounter(counter)
+    // counter=counter+1;
+    // console.log("clicked",counter);
+    setCounter(counter+1)
   }
   const removevalue=()=>{
-    counter=counter-1;
-    console.log("clicked",counter);
-    setCounter(counter)
+    // counter=counter-1;
+    // console.log("clicked",counter);
+    setCounter(counter-1)
   }
   return (
     <>
