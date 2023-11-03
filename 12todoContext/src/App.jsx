@@ -11,7 +11,7 @@ function App() {
     setTodos((prev)=>prev.map((prevTodo)=>(prevTodo.id===id?todo:prevTodo)))
   }
   const deleteTodo=(id)=>{
-    setTodos((prev)=>prev.filter((todo)=>todo.id!=id))
+    setTodos((prev)=>prev.filter((todo)=>todo.id!==id))
   }
   const toggleComplete=(id)=>{
     setTodos((prev)=>prev.map((prevTodo)=>prevTodo.id===id?{...prevTodo,checked:!prevTodo.checked}:prevTodo))
@@ -22,6 +22,10 @@ useEffect(()=>{
 
   if(todos&& todos.length>0) {setTodos(todos)}
 },[])
+
+useEffect(()=>{
+  localStorage.setItem("todos",JSON.stringify(todos))
+},[todos])
   return (
     <TodoProvider value={{todos,addTodo,deleteTodo,updateTodo,toggleComplete}} >
       <div className="bg-[#172842] min-h-screen py-8">
