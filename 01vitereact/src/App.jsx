@@ -1,11 +1,9 @@
 
-
-
 function App() {
- 
+  
 
   return (
-    <h1>Hello World | This First react project</h1>
+    <h1>First react app using vite frame</h1>
   )
 }
 
