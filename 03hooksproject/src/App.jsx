@@ -1,41 +1,42 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
+
 function App() {
+  let [count, setCount] = useState(0)
+const addvalue = ()=>{
+  if(count<20){
+    // count=count+1;
 
- let [counter,setCounter]=useState(5)
+  // setCount(count+1);
+  // setCount(count+1);
+  // setCount(count+1);
+  // setCount(count+1);
+  //increment 1 by one click
 
-  // let counter=5;
-  /*
-  const addvalue=()=>{
-    if(counter<20) counter=counter+1;
-    // console.log("clicked",counter);
-    setCounter(counter)
+  setCount(count=>count+1);
+  setCount(count=>count+1);
+  setCount(count=>count+1);
+  setCount(count=>count+1);
+  //increment 4 by one click
   }
-*/
-const addvalue=()=>{
-  // console.log("clicked",counter);
-  // it increment counter 5 times
-  setCounter(counter=>counter+1)
-  setCounter(counter=>counter+1)
-  setCounter(counter=>counter+1)
-  setCounter(counter=>counter+1)
-  setCounter(counter=>counter+1)
+
 }
-  const removevalue=()=>{
-    if(counter>=1) counter=counter-1;
-    // console.log("clicked",counter);
-    setCounter(counter)
+const deletevalue=()=>{
+  if(count>0) {
+    count=count-1;
+  setCount(count);
   }
-  return (
-    <>
-    <h1>Counter Project</h1>
-    <h3>counter value : {counter}</h3>
+}
 
-    <button onClick={addvalue}> add </button>
-    <br />
-    <button onClick={removevalue}>remove</button>
+  return (
+
+    <>
+      <h2>Tarun Dalbera</h2>
+      <h4>value:{count}</h4>
+      <button onClick={addvalue}>add:</button>
+      <br />
+      <button onClick={deletevalue}>delete:</button>
     </>
   )
 }
