@@ -61,7 +61,7 @@ function App() {
         </div>
         <div className='flex items-center gap-x-1'  > 
         <input type="checkbox" name="number" id="number" defaultChecked={numberTake} 
-        onChange={()=>{setCharTake((prev)=>!prev)}} />
+        onChange={()=>{setNumberTake((prev)=>!prev)}} />
         <label htmlFor="number">Number</label>
         </div>
 
@@ -73,9 +73,7 @@ function App() {
 
        </div>
 
-       </div>
-
-       
+       </div>  
     </div>
 
     </>
