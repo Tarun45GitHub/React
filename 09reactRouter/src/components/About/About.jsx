@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-export default function About() {
+function About() {
     return (
         <div className="py-16 bg-white">
             <div className="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
@@ -28,5 +28,8 @@ export default function About() {
                 </div>
             </div>
         </div>
-    );
+
+    )
 }
+
+export default About
