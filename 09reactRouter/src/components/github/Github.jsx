@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useLoaderData, useParams } from 'react-router-dom'
 
 function Github() {
     const {username}=useParams()
     const [data,setData]=useState({})
+    // const data= useLoaderData()
     useEffect(()=>{
         fetch(`https://api.github.com/users/${username}`)
             .then((res)=>(res.json()))
             .then((res)=>{setData(res)})
     },[username])
+
+    
     // const avatarUrl= res.avatar_url
     //             const name=res.name
     //             const Bio=res.Bio
@@ -29,3 +32,9 @@ function Github() {
 }
 
 export default Github
+
+export const basicGitgubInfo=async()=>{
+   const data=await fetch(`https://api.github.com/users/Tarun45GitHub`)
+    .then((res)=>res.json())
+    return data;
+}
