@@ -1,14 +1,13 @@
-import UserContextProvider from "./context/UserContextProvider"
+import { UserContextProvider } from './context/UserContextProvider'
 import './App.css'
-import Login from "./components/Login"
-import Profile from "./components/Profile"
+import Login from './components/Login'
+import Profile from './components/Profile'
 
 function App() {
   
-
   return (
     <UserContextProvider>
-      <h1>Tarun Dalbera</h1>
+      <h1>example off UseContext and createContext</h1>
       <Login/>
       <Profile/>
     </UserContextProvider>
