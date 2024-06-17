@@ -14,7 +14,6 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
 }
 
 a {
@@ -69,17 +68,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
-.main{
-  width: 100vw;
-  height: 100vh;
-  animation-duration: 200ms;
-}
-.container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  border: 1px solid rgb(16, 16, 16);
-  
-  background-color: white;
 }

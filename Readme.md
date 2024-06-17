@@ -28,3 +28,11 @@ This is react folder.
 - npm create vite@latest
 
 * React create single page application(SPA)
+## React Hooks
+- hook is a function that return an array
+- The React useState Hook allows us to track state in a
+ function component.
+ [const [state, setState] = useState(initialState)]
+- useCallback is a React Hook that lets you cache a function definition between re-renders.
+[const cachedFn = useCallback(fn, dependencies)]
+
